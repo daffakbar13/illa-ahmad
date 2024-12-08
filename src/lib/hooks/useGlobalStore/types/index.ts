@@ -50,8 +50,6 @@ interface Media {
     gallery25: string
     profileIlla: string
     profileAhmad: string
-    separator1: string
-    separator2: string
   }
 }
 

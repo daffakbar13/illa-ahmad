@@ -105,7 +105,7 @@ const Cinematic: NextPage = () => {
         zIndex={1}
         sx={{ aspectRatio: '16/9', backgroundColor: '#152648', opacity: 0.5 }}
       />
-      <video width="100%" autoPlay loop muted playsInline>
+      <video width="100%" preload="auto" autoPlay loop muted playsInline>
         <source src="/videos/cinematic.mp4" type="video/mp4" />
       </video>
     </Section>

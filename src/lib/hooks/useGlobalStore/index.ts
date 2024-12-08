@@ -59,8 +59,6 @@ const useGlobalStore = create<UseGlobalStore>((set, get) => ({
       gallery25: '/images/gallery-25.jpg',
       profileIlla: '/images/IMG_8645.JPG',
       profileAhmad: '/images/profile-ahmad.webp',
-      separator1: '/images/IMG_8055.JPG',
-      separator2: '/images/separator-2.jpg',
     },
   },
   setContentLoaded(isContentLoaded) {

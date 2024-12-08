@@ -67,6 +67,7 @@ const Opening: NextPage = () => {
       </motion.div>
       <video
         id="opening-video"
+        preload="auto"
         autoPlay
         playsInline
         muted
