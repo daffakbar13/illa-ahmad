@@ -1,17 +1,17 @@
+import { CalendarMonthOutlined } from '@mui/icons-material'
 import Box from '@mui/material/Box'
+import Button from '@mui/material/Button'
 import Stack from '@mui/material/Stack'
 import Typography from '@mui/material/Typography'
+import dayjs from 'dayjs'
 import { motion } from 'framer-motion'
 import { NextPage } from 'next'
+import Link from 'next/link'
 import React from 'react'
 
 import fonts from '@/assets/fonts'
 import Section from '@/lib/components/Section'
 import useGlobalStore from '@/lib/hooks/useGlobalStore'
-import dayjs from 'dayjs'
-import Button from '@mui/material/Button'
-import { CalendarMonthOutlined } from '@mui/icons-material'
-import Link from 'next/link'
 
 const CountDown: NextPage = () => {
   const { media } = useGlobalStore()

@@ -1,15 +1,15 @@
+import { AccountBalanceRounded, CalendarMonthRounded, MapRounded } from '@mui/icons-material'
 import Box from '@mui/material/Box'
 import Divider from '@mui/material/Divider'
 import Stack from '@mui/material/Stack'
 import Typography from '@mui/material/Typography'
+import { motion } from 'framer-motion'
 import { NextPage } from 'next'
 import React from 'react'
 
 import fonts from '@/assets/fonts'
 import Section from '@/lib/components/Section'
 import useGlobalStore from '@/lib/hooks/useGlobalStore'
-import { AccountBalanceRounded, CalendarMonthRounded, MapRounded } from '@mui/icons-material'
-import { motion } from 'framer-motion'
 
 const Address: NextPage = () => {
   const { media } = useGlobalStore()

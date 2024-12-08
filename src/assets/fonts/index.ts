@@ -1,7 +1,6 @@
-import { Newsreader, Oranienbaum } from 'next/font/google'
+import { Oranienbaum } from 'next/font/google'
 import localFont from 'next/font/local'
 
-const newsReader = Newsreader({ subsets: ['latin'] })
 const oranienBaum = Oranienbaum({ subsets: ['latin'], weight: '400' })
 const edensor = localFont({ src: './edensor.woff2' })
 const bodebeck = localFont({ src: './bodebeck.woff2' })
@@ -21,7 +20,6 @@ const fonts = {
   edensor,
   bodebeck,
   analogue,
-  newsReader,
   jura,
   strawberryCupcakes,
   arimaMadurai,

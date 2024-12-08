@@ -1,3 +1,4 @@
+import Box from '@mui/material/Box'
 import Stack from '@mui/material/Stack'
 import Typography from '@mui/material/Typography'
 import { motion } from 'framer-motion'
@@ -7,7 +8,6 @@ import React from 'react'
 import fonts from '@/assets/fonts'
 import Section from '@/lib/components/Section'
 import useGlobalStore from '@/lib/hooks/useGlobalStore'
-import Box from '@mui/material/Box'
 
 const Surah: NextPage = () => {
   const { media } = useGlobalStore()

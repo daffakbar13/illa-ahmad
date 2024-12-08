@@ -57,7 +57,7 @@ const Gift: NextPage = () => {
           borderColor="primary.main"
           boxShadow="0px 0px 30px 0px rgba(0,0,0,0.5)"
           sx={{
-            backgroundColor: `secondary.main`,
+            backgroundColor: 'secondary.main',
           }}
         >
           <motion.div

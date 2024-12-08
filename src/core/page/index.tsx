@@ -2,20 +2,20 @@ import Stack from '@mui/material/Stack'
 import { NextPage } from 'next'
 import React from 'react'
 
-import Cover from '@/core/sections/Cover'
-import Profile from '@/core/sections/Profile'
-import Surah from '@/core/sections/Surah'
 import Address from '@/core/sections/Address'
+import Cover from '@/core/sections/Cover'
 import Gallery from '@/core/sections/Gallery'
 import Gift from '@/core/sections/Gift'
+import Profile from '@/core/sections/Profile'
+import Surah from '@/core/sections/Surah'
 import useGlobalStore from '@/lib/hooks/useGlobalStore'
 
 import CountDown from '../sections/CountDown'
-import Opening from '../sections/Opening'
-import Wishes from '../sections/Wishes'
 import LoveStory from '../sections/LoveStory'
+import Opening from '../sections/Opening'
 import Separator1 from '../sections/Separator1'
 import Separator2 from '../sections/Separator2'
+import Wishes from '../sections/Wishes'
 
 const Page: NextPage = () => {
   const { isOpenedInvitation, media, setIsFullScreen, setActiveScreen, closeInvitation, setMedia } =

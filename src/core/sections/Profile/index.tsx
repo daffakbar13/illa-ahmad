@@ -30,14 +30,14 @@ const data = {
     shortName: 'Laila',
     childOrder: 1,
     father: {
-      name: 'Juju',
+      name: 'Sakimun',
       isAlm: false,
     },
     role: 'cpw',
     fullName: 'Nurlailatul Musthavdhah',
     gender: 'female',
     mother: {
-      name: 'Epa Nurjanah Bpk. Sakimun',
+      name: 'Epa Nurjanah',
       isAlm: false,
     },
   },
