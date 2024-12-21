@@ -16,7 +16,7 @@ import useGlobalStore from '@/lib/hooks/useGlobalStore'
 const CountDown: NextPage = () => {
   const { media } = useGlobalStore()
   const [date, setDate] = React.useState(dayjs())
-  const weddingDate = dayjs('2025-01-27T00:00:00.000Z')
+  const weddingDate = dayjs('2025-01-27T01:00:00.000Z')
   const diff = [
     ['Hari', weddingDate.diff(date, 'd')],
     ['Jam', weddingDate.diff(date, 'h') % 24],
