@@ -63,9 +63,14 @@ const Cover: NextPage = () => {
           <Typography className={fonts.montserrat.className} fontSize={15} fontWeight="bold">
             Dear,
             <br />
-            Guest Name
+            {to || 'Guest Name'}
           </Typography>
-          <Button onClick={onOpenInvitation}>Open Invitation</Button>
+          <Button onClick={onOpenInvitation}>
+            Open Invitation &nbsp;
+            {!isContentLoaded && isOpenedInvitation && (
+              <CircularProgress size={12} color="warning" />
+            )}
+          </Button>
         </Stack>
       </motion.div>
     </Section>
