@@ -5,33 +5,33 @@ export async function GET() {
     JSON.stringify({
       data: {
         cpp: {
-          short_name: 'Daffa',
-          child_order: 3,
+          shortName: 'Ahmad',
+          childOrder: 3,
           father: {
-            name: 'Mahna',
-            is_alm: false,
+            name: 'Oding Abdul Kodir',
+            isAlm: false,
           },
           role: 'cpp',
-          full_name: 'Muhammad Daffa Raihan Akbar',
+          fullName: 'Ahmad Fauzi',
           gender: 'male',
           mother: {
-            name: 'Tien Kartini P.',
-            is_alm: false,
+            name: 'Tuti Sumiati',
+            isAlm: false,
           },
         },
         cpw: {
-          short_name: 'Alvina',
-          child_order: 1,
+          shortName: 'Laila',
+          childOrder: 1,
           father: {
-            name: 'Dadi Supriadi',
-            is_alm: true,
+            name: 'Sakimun',
+            isAlm: false,
           },
           role: 'cpw',
-          full_name: 'Alvina Damayanti',
+          fullName: 'Nurlailatul Musthavdhah',
           gender: 'female',
           mother: {
-            name: 'Jeuminah',
-            is_alm: false,
+            name: 'Epa Nurjanah',
+            isAlm: false,
           },
         },
       },

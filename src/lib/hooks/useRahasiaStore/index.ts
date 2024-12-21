@@ -42,11 +42,11 @@ const useRahasiaStore = create<UseRahasiaStore>((set) => ({
     
 Dengan ungkapan syukur atas karunia Allah SWT, perkenankan kami mengundang Bapak/Ibu/Saudara/i untuk menghadiri acara pernikahan kami
     
-*Alvina & Daffa*
+*Laila & Ahmad*
     
 Yang insyaAllah akan dilaksanakan pada :
     
-*RABU, 12 JUNI 2024*
+*Senin, 28 Januari 2025*
     
 Berikut link undangan kami sampaikan
     

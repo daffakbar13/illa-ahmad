@@ -3,19 +3,19 @@ import type { Metadata } from 'next'
 import RootLayout from '@/core/layout/RootLayout'
 
 export const metadata: Metadata = {
-  title: 'Alvina & Daffa',
-  description: 'The Wedding of Alvina & Daffa',
-  authors: { name: 'Alvina & Daffa' },
+  title: 'Laila & Ahmad',
+  description: 'The Wedding of Laila & Ahmad',
+  authors: { name: 'Laila & Ahmad' },
   keywords: [
-    'alvina',
-    'daffa',
-    'alvina & daffa',
+    'laila',
+    'ahmad',
+    'laila & ahmad',
     'wedding',
     'the wedding',
-    'the wedding of alvina & daffa',
+    'the wedding of laila & ahmad',
   ],
   icons: {
-    icon: '/images/biru-3.jpg',
+    icon: '/images/gallery-25.jpg',
   },
 }
 
