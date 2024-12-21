@@ -27,7 +27,7 @@ const CountDown: NextPage = () => {
     'Merupakan suatu kehormatan dan kebahagiaan bagi kami, apabila Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu. Atas kehadiran dan doa restunya, kami mengucapkan terima kasih.'
 
   function getGoogleCalendarLink() {
-    const format = 'YYYYMMDDTHHMMSSZ'
+    const format = 'YYYYMMDD'
     const from = weddingDate.startOf('d').format(format)
     const to = weddingDate.endOf('d').format(format)
 
@@ -37,7 +37,7 @@ const CountDown: NextPage = () => {
       dates: `${from}/${to}`,
       details,
       location:
-        'Jl. Mayjen Sutoyo No.51, RT.2/RW.8, Cililitan, Kec. Kramat jati, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13640',
+        'Jl. Panji Siliwangi No. 03, Mekarwangi, Kec. Sukamantri, Kabupaten Ciamis, Jawa Barat 46264',
       ctz: 'Asia/Jakarta',
     })
 
