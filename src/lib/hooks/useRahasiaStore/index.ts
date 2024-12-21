@@ -46,7 +46,7 @@ Dengan ungkapan syukur atas karunia Allah SWT, perkenankan kami mengundang Bapak
     
 Yang insyaAllah akan dilaksanakan pada :
     
-*Senin, 28 Januari 2025*
+*Senin, 27 Januari 2025*
     
 Berikut link undangan kami sampaikan
     
