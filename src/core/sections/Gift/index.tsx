@@ -82,21 +82,21 @@ const Gift: NextPage = () => {
           <Stack gap={2} alignItems="center">
             {[
               {
-                name: 'Ahmad',
+                name: 'Ahmad Fauzi',
                 cardNumber: '123 123 1234',
                 logo: media.images.bca,
                 isBank: true,
                 isGift: false,
               },
               {
-                name: 'Illa Laila',
+                name: 'Nurlailatul Musthavdhah',
                 cardNumber: '0822 6243 4804',
                 logo: media.images.dana,
                 isBank: false,
                 isGift: false,
               },
               {
-                name: 'Illa Laila',
+                name: 'Nurlailatul Musthavdhah',
                 address:
                   'Jl. Panji Siliwangi No. 03, RT.15/RW.05, Dsn. Pajagan, Ds. Mekarwangi, Kec. Sukamantri, Kabupaten Ciamis',
                 cardNumber: '',

@@ -78,10 +78,10 @@ const Surah: NextPage = () => {
             transition={{ duration: 1.2 }}
           >
             <Typography className={fonts.montserrat.className}>
-              Dan di antara tanda-tanda kekuasaan-Nva ialah Dia menciptakan untukmu isteri-isteri
+              Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu isteri-isteri
               dari jenismu sendiri, supaya kamu cenderung dan merasa tenteram kepadanya, dan
               dijadikan-Nya diantaramu rasa kasih dan sayang. Sesungguhnya pada yang demikian itu
-              benar-benar terdapat tanda-tanda bagi kaum vang berfikir.
+              benar-benar terdapat tanda-tanda bagi kaum yang berfikir.
             </Typography>
           </motion.div>
           <motion.div
