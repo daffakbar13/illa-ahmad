@@ -7,7 +7,7 @@ import GuestsModel from '@/server/models/guests'
 export async function GET() {
   const guestGroups = await GuestGroupsModel()
   const guests = await GuestsModel()
-  const list = await guestGroups.find({}, { sort: ['name', 'asc'] }).toArray()
+  const list = await guestGroups.find({}, { sort: ['name', 1] }).toArray()
   const totals = await Promise.all(list.map((l) => guests.countDocuments({ group_id: l._id })))
 
   return new NextResponse(

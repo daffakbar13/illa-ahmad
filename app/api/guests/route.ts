@@ -6,7 +6,7 @@ import GuestsModel from '@/server/models/guests'
 export async function GET(req: NextRequest) {
   const guests = await GuestsModel()
   const groupId = new ObjectId(req.nextUrl.searchParams.get('group_id') || '')
-  const data = await guests.find({ group_id: groupId }, { sort: ['name', 'asc'] }).toArray()
+  const data = await guests.find({ group_id: groupId }, { sort: ['name', 1] }).toArray()
 
   return new NextResponse(JSON.stringify({ data }), { status: 200 })
 }
