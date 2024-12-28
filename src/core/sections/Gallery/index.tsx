@@ -20,17 +20,17 @@ const Card = ({ children }: React.PropsWithChildren) => (
 const Gallery: NextPage = () => {
   const { previewGallery, media, openPreviewGallery, closePreviewGallery } = useGlobalStore()
 
-  const renderImages = (isLandscape: boolean, ...images: string[]) =>
-    images.map((img, i) => (
+  const renderImages = (isLandscape: boolean, ...images: (keyof typeof media.images)[]) =>
+    images.map((key, i) => (
       <Card key={i}>
         <Image
-          src={img}
+          src={media.images[key]}
           height={100}
           width={100}
-          alt={'gallery'}
+          alt={key}
           quality={1}
           style={{ ...(isLandscape && { aspectRatio: 'unset' }) }}
-          onClick={openPreviewGallery(img)}
+          onClick={openPreviewGallery(media.images[key])}
         />
       </Card>
     ))
@@ -70,50 +70,17 @@ const Gallery: NextPage = () => {
           },
         }}
       >
-        <Box display="flex">
-          {renderImages(false, media.images.gallery7, media.images.gallery5)}
-        </Box>
-        <Box display="flex">{renderImages(true, media.images.gallery2)}</Box>
-        <Box display="flex">
-          {renderImages(false, media.images.gallery3, media.images.gallery6)}
-        </Box>
-        <Box display="flex">{renderImages(true, media.images.gallery4)}</Box>
-        <Box display="flex">
-          {renderImages(false, media.images.gallery9, media.images.gallery10)}
-        </Box>
-        <Box display="flex">{renderImages(true, media.images.gallery8)}</Box>
-        <Box display="flex">
-          {renderImages(false, media.images.gallery11, media.images.gallery12)}
-        </Box>
-        <Box display="flex">
-          {renderImages(false, media.images.gallery13, media.images.gallery15)}
-        </Box>
-        <Box display="flex">
-          {renderImages(false, media.images.gallery16, media.images.gallery17)}
-        </Box>
-        <Box display="flex">
-          {renderImages(false, media.images.gallery18, media.images.gallery19)}
-        </Box>
-        <Box display="flex">
-          {renderImages(false, media.images.gallery21, media.images.gallery23)}
-        </Box>
-        <Box display="flex">
-          {renderImages(false, media.images.gallery24, media.images.gallery25)}
-        </Box>
-
-        {/* <Box display="flex" flexBasis="30%">
-          {renderImages(true, media.images.biruLandscape)}
-        </Box>
-        <Box display="flex">
-          {renderImages(false, media.images.biru3, media.images.biru4, media.images.biru5)}
-        </Box>
-        <Box display="flex">{renderImages(false, media.images.jawa4, media.images.jawa5)}</Box>
-        <Box display="flex" flexBasis="40%">
-          {renderImages(true, media.images.jawaLandscape)}
-        </Box>
-        <Box display="flex">
-          {renderImages(false, media.images.jawa2, media.images.jawa1, media.images.jawa3)}
-        </Box> */}
+        <Box display="flex">{renderImages(false, 'gallery7', 'gallery5')}</Box>
+        <Box display="flex">{renderImages(true, 'gallery2')}</Box>
+        <Box display="flex">{renderImages(false, 'gallery15', 'gallery6')}</Box>
+        <Box display="flex">{renderImages(true, 'gallery4')}</Box>
+        <Box display="flex">{renderImages(false, 'gallery9', 'gallery10')}</Box>
+        <Box display="flex">{renderImages(false, 'gallery11', 'gallery12')}</Box>
+        <Box display="flex">{renderImages(false, 'gallery13', 'gallery8')}</Box>
+        <Box display="flex">{renderImages(false, 'gallery16', 'gallery17')}</Box>
+        <Box display="flex">{renderImages(false, 'gallery18', 'gallery19')}</Box>
+        <Box display="flex">{renderImages(false, 'gallery21', 'gallery23')}</Box>
+        <Box display="flex">{renderImages(false, 'gallery24', 'gallery25')}</Box>
       </Stack>
       <Dialog open={previewGallery !== null} fullWidth onClose={closePreviewGallery}>
         {previewGallery && (

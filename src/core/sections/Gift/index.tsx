@@ -114,7 +114,7 @@ const Gift: NextPage = () => {
                 transition={{ duration: 1.2 }}
               >
                 <Stack
-                  height={172}
+                  minHeight={172}
                   justifyContent="center"
                   alignItems={e.isGift ? 'center' : 'start'}
                   border="1px solid white"
