@@ -79,13 +79,13 @@ const CountDown: NextPage = () => {
           overflow="hidden"
           sx={{
             borderRadius: '200px 200px 0 0',
-            backgroundImage: `url(${media.images.forest6})`,
+            backgroundImage: `url(${media.images.gallery25})`,
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'cover',
             backgroundPosition: 'top center',
           }}
         >
-          <img src="/videos/cinematic.gif" alt="" />
+          {/* <img src="/videos/cinematic.gif" alt="" /> */}
         </Box>
         <Stack flexDirection="row" gap={0.5}>
           {diff.map(([key, value], i) => (
