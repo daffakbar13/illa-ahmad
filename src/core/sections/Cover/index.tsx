@@ -1,6 +1,4 @@
-import CardGiftcardRoundedIcon from '@mui/icons-material/CardGiftcardRounded'
 import { CircularProgress } from '@mui/material'
-import Box from '@mui/material/Box'
 import Button from '@mui/material/Button'
 import Stack from '@mui/material/Stack'
 import Typography from '@mui/material/Typography'
@@ -12,14 +10,15 @@ import React from 'react'
 import fonts from '@/assets/fonts'
 import Section from '@/lib/components/Section'
 import useGlobalStore from '@/lib/hooks/useGlobalStore'
-import GuestsService from '@/lib/services/guests/guests.service'
+// import GuestsService from '@/lib/services/guests/guests.service'
 
 const Cover: NextPage = () => {
   const { isContentLoaded, isOpenedInvitation, media, setActiveScreen } = useGlobalStore()
   const { id } = useParams()
   const params = useSearchParams()
   const to = params.get('to')
-  const detail = GuestsService.GetGuestDetail.useQuery(id as string)
+  const kepada = decodeURIComponent(String(id))
+  // const detail = GuestsService.GetGuestDetail.useQuery(id as string)
 
   function onOpenInvitation() {
     if (document.body.requestFullscreen) {
@@ -63,7 +62,7 @@ const Cover: NextPage = () => {
           <Typography className={fonts.montserrat.className} fontSize={15} fontWeight="bold">
             Dear,
             <br />
-            {to || 'Guest Name'}
+            {kepada || 'Guest Name'}
           </Typography>
           <Button onClick={onOpenInvitation}>
             Open Invitation &nbsp;
