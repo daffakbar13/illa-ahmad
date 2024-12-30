@@ -27,6 +27,7 @@ const useGlobalStore = create<UseGlobalStore>((set, get) => ({
       bg3: '/images/background-3.webp',
       bgBank: '/images/bg-bank.webp',
       bca: '/images/bca.png',
+      bri: '/images/bri.svg',
       chipAtm: '/images/chip-atm.png',
       dana: '/images/dana.png',
       forest1: '/images/forest-1.jpg',

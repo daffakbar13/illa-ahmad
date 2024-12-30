@@ -18,6 +18,7 @@ interface Media {
     bg3: string
     bgBank: string
     bca: string
+    bri: string
     chipAtm: string
     dana: string
     forest1: string

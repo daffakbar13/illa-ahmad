@@ -91,7 +91,7 @@ const Gift: NextPage = () => {
               {
                 name: 'Nurlailatul Musthavdhah',
                 cardNumber: '4061 0102 4736 532',
-                logo: media.images.bca,
+                logo: media.images.bri,
                 isBank: true,
                 isGift: false,
               },
