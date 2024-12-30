@@ -65,8 +65,8 @@ const Surah: NextPage = () => {
               backgroundColor: '#E6DED8',
               backgroundImage: `url(${media.images.bb})`,
               backgroundRepeat: 'no-repeat',
-              backgroundSize: 'cover',
-              backgroundPosition: 'bottom',
+              backgroundSize: '140%',
+              backgroundPosition: '-20px -150px',
               pointerEvents: 'none',
             }}
           ></Box>

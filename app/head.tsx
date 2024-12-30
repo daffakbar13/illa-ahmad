@@ -36,6 +36,9 @@ export default function Document() {
       <link rel="preload" as="image" href="/images/gallery-23.jpg" type="image/jpg" />
       <link rel="preload" as="image" href="/images/gallery-24.jpg" type="image/jpg" />
       <link rel="preload" as="image" href="/images/gallery-25.jpg" type="image/jpg" />
+      <link rel="preload" as="image" href="/images/gallery-26.jpg" type="image/jpg" />
+      <link rel="preload" as="image" href="/images/gallery-27.jpg" type="image/jpg" />
+      <link rel="preload" as="image" href="/images/gallery-28.jpg" type="image/jpg" />
       <link rel="preload" as="image" href="/images/IMG_7954.JPG" type="image/JPG" />
       <link rel="preload" as="image" href="/images/IMG_8055.JPG" type="image/JPG" />
       <link rel="preload" as="image" href="/images/IMG_8645.JPG" type="image/JPG" />
