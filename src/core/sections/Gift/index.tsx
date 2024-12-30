@@ -97,7 +97,7 @@ const Gift: NextPage = () => {
               },
               {
                 name: 'Nurlailatul Musthavdhah',
-                cardNumber: '0822 6243 4804',
+                cardNumber: '0812 3733 389',
                 logo: media.images.dana,
                 isBank: false,
                 isGift: false,
@@ -107,7 +107,7 @@ const Gift: NextPage = () => {
                 address:
                   'Jl. Panji Siliwangi No. 03, RT.15/RW.05, Dsn. Pajagan, Ds. Mekarwangi, Kec. Sukamantri, Kabupaten Ciamis',
                 cardNumber: '',
-                phoneNumber: '0821 2107 1220',
+                phoneNumber: '0812 3733 389',
                 logo: '',
                 isBank: false,
                 isGift: true,
