@@ -83,7 +83,14 @@ const Gift: NextPage = () => {
             {[
               {
                 name: 'Ahmad Fauzi',
-                cardNumber: '123 123 1234',
+                cardNumber: '740 521 4571',
+                logo: media.images.bca,
+                isBank: true,
+                isGift: false,
+              },
+              {
+                name: 'Nurlailatul Musthavdhah',
+                cardNumber: '4061 0102 4736 532',
                 logo: media.images.bca,
                 isBank: true,
                 isGift: false,
