@@ -70,11 +70,12 @@ const Gallery: NextPage = () => {
           },
         }}
       >
-        <Box display="flex">{renderImages(false, 'gallery7', 'gallery5')}</Box>
+        <Box display="flex">{renderImages(false, 'gallery7', 'gallery28')}</Box>
         <Box display="flex">{renderImages(true, 'gallery2')}</Box>
-        <Box display="flex">{renderImages(false, 'gallery15', 'gallery6')}</Box>
+        <Box display="flex">{renderImages(false, 'gallery15', 'gallery27')}</Box>
         <Box display="flex">{renderImages(true, 'gallery4')}</Box>
         <Box display="flex">{renderImages(false, 'gallery9', 'gallery10')}</Box>
+        <Box display="flex">{renderImages(true, 'gallery26')}</Box>
         <Box display="flex">{renderImages(false, 'gallery11', 'gallery12')}</Box>
         <Box display="flex">{renderImages(false, 'gallery13', 'gallery8')}</Box>
         <Box display="flex">{renderImages(false, 'gallery16', 'gallery17')}</Box>

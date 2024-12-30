@@ -49,6 +49,9 @@ interface Media {
     gallery23: string
     gallery24: string
     gallery25: string
+    gallery26: string
+    gallery27: string
+    gallery28: string
     profileIlla: string
     profileAhmad: string
   }
