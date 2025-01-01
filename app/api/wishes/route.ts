@@ -16,8 +16,8 @@ export async function POST(req: Request) {
 
   await wishes.insertOne({
     ...body,
-    guest_id: new ObjectId(body.guest_id),
-    group_id: new ObjectId(body.group_id),
+    guest_id: new ObjectId(),
+    group_id: new ObjectId(),
     created_at: new Date(),
   })
 

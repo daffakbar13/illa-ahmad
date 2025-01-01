@@ -82,14 +82,14 @@ const Wishes: NextPage = () => {
 
             if (
               !createWish.isLoading &&
-              detail.isSuccess &&
+              // detail.isSuccess &&
               [name, description, status].every((f) => f.value)
             ) {
               createWish.mutate(
                 [
                   {
-                    guest_id: detail.data.id,
-                    group_id: detail.data.groupId,
+                    guest_id: '',
+                    group_id: '',
                     name: name.value,
                     description: description.value,
                     status: Number(status.value),

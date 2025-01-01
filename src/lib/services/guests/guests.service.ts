@@ -14,8 +14,8 @@ namespace GuestsService {
 
   GetGuests.useQuery = createQuery(GetGuests, { enabled: false })
 
-  export async function GetGuestDetail(id: string) {
-    return service.get<null, GuestsDto.Guest>(`/${id}`)
+  export async function GetGuestDetail(name: string) {
+    return service.get<null, GuestsDto.Guest>(`/${name}`)
   }
 
   GetGuestDetail.useQuery = createQuery(GetGuestDetail)

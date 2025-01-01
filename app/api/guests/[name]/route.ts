@@ -5,21 +5,21 @@ import { NextRequest, NextResponse } from 'next/server'
 import GuestsModel from '@/server/models/guests'
 import ViewHistoriesModel from '@/server/models/view_histories'
 
-type Params = { params: { id: string } }
+type Params = { params: { id: string; name: string } }
 
 export async function GET(_: NextRequest, { params }: Params) {
-  const guestId = new ObjectId(params.id)
   const guests = await GuestsModel()
   const viewHistories = await ViewHistoriesModel()
-  const data = await guests.findOneAndUpdate({ _id: guestId }, { $inc: { seen: 1 } })
+  const data = await guests.findOneAndUpdate({ name: params.name }, { $inc: { seen: 1 } })
 
   if (data) {
     viewHistories.insertOne({
-      guest_id: data._id,
+      guest_id: new ObjectId(),
       name: data.name,
       group_id: data.group_id,
       created_at: new Date(),
     })
+    return new NextResponse(JSON.stringify({ data }), { status: 200 })
   }
 
   return new NextResponse(JSON.stringify({ data }), { status: 200 })
