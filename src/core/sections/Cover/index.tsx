@@ -85,7 +85,7 @@ const Cover: NextPage = () => {
             }}
           >
             <Box
-              height={260}
+              height={320}
               width="100%"
               borderRadius="1000px 1000px 0 0"
               sx={{
