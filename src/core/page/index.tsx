@@ -39,11 +39,7 @@ const Page: NextPage = () => {
 
   React.useEffect(() => {
     Promise.all([media.videos.opening, media.audios.backsound].map(hitFile)).then(() => {
-      Promise.all([
-        Promise.all(Object.values(media.audios).map(hitFile)),
-        Promise.all(Object.values(media.images).map(hitFile)),
-        Promise.all(Object.values(media.videos).map(hitFile)),
-      ])
+      Promise.all(Object.values(media.images).map(hitFile))
     })
 
     document.onfullscreenchange = () => {
@@ -61,6 +57,7 @@ const Page: NextPage = () => {
       id="container"
       component="main"
       sx={{
+        backgroundColor: 'primary.main',
         backgroundImage: `url(${media.images.bg2})`,
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
