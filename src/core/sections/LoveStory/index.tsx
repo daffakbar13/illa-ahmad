@@ -64,8 +64,9 @@ const LoveStory: NextPage = () => {
         Menjalin Hubungan
         <br />
         <br />
-        Kemudian pada tahun 2020 bulan Agustus kami mulai menjalin hubungan, sampai ahirnya kami
-        memutuskan untuk ke jenjang yang lebih serius yaitu pernikahan.
+        Kemudian pada tahun 2020 bulan Agustus kami mulai menjalin hubungan, Sampai akhirnya kami
+        memutuskan untuk mempertemukan kedua keluarga pada bulan April 2024. Untuk melangkah ke
+        jenjang yang lebih serius yaitu pernikahan.
         <br />
         <br />
         Pernikahan

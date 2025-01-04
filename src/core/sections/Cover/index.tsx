@@ -1,4 +1,4 @@
-import { CircularProgress } from '@mui/material'
+import { Box, CircularProgress } from '@mui/material'
 import Button from '@mui/material/Button'
 import Stack from '@mui/material/Stack'
 import Typography from '@mui/material/Typography'
@@ -39,41 +39,82 @@ const Cover: NextPage = () => {
       gap={2}
       flex={1}
       sx={{
-        backgroundImage: `url(${media.images.bg1})`,
+        backgroundColor: 'primary.main',
+        backgroundImage: `url(${media.images.bg2})`,
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
-        backgroundPosition: 'center bottom',
+        backgroundPosition: 'center',
       }}
     >
       <motion.div
-        style={{ zIndex: 2 }}
         initial={{ opacity: 0, scale: 0 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1.2 }}
+        style={{ zIndex: 2, width: '80%', height: '80%' }}
       >
-        <Stack justifyContent="center" alignItems="center" height="inherit" gap={2}>
-          <Typography className={fonts.marcellus.className} fontSize={18}>
-            THE WEDDING OF
-          </Typography>
-          <Stack>
-            <Typography color="primary" className={fonts.marcellus.className} fontSize={40}>
-              Laila
-              <br /> & <br />
-              Ahmad
+        <Box
+          position="relative"
+          justifyContent="center"
+          alignItems="center"
+          height="100%"
+          gap={2}
+          padding={2.5}
+          borderRadius={999}
+          overflow="hidden"
+        >
+          <Box
+            position="absolute"
+            top={0}
+            left={0}
+            width="100%"
+            height="100%"
+            bgcolor="secondary.main"
+            sx={{ opacity: 0.8 }}
+          />
+          <Stack
+            position="relative"
+            alignItems="center"
+            height="100%"
+            gap={1.5}
+            borderRadius={999}
+            zIndex={2}
+            sx={{
+              border: '6px solid',
+              borderColor: 'primary.main',
+            }}
+          >
+            <Box
+              height={260}
+              width="100%"
+              borderRadius="1000px 1000px 0 0"
+              sx={{
+                backgroundImage: `url(${media.images.gallery20})`,
+                backgroundRepeat: 'no-repeat',
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+              }}
+            />
+            <Stack>
+              <Typography color="primary" className={fonts.marcellus.className} fontSize={30}>
+                Laila & Ahmad
+              </Typography>
+            </Stack>
+            <Typography className={fonts.montserrat.className} fontSize={13}>
+              Kepada Yth:
+              <br />
+              Bapak/Ibu/Saudara/i
             </Typography>
+            <Typography className={fonts.montserrat.className} fontSize={15} fontWeight="bold">
+              {to}
+            </Typography>
+            <Button onClick={onOpenInvitation}>
+              Open Invitation &nbsp;
+              {!isContentLoaded && isOpenedInvitation && (
+                <CircularProgress size={12} color="warning" />
+              )}
+            </Button>
           </Stack>
-          <Typography className={fonts.montserrat.className} fontSize={15} fontWeight="bold">
-            Dear,
-            <br />
-            {to || 'Guest Name'}
-          </Typography>
-          <Button onClick={onOpenInvitation}>
-            Open Invitation &nbsp;
-            {!isContentLoaded && isOpenedInvitation && (
-              <CircularProgress size={12} color="warning" />
-            )}
-          </Button>
-        </Stack>
+        </Box>
       </motion.div>
     </Section>
   )
