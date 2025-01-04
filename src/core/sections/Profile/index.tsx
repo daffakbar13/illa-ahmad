@@ -133,7 +133,7 @@ const Profile: NextPage = () => {
                       >
                         <Box>
                           <Typography className={fonts.bodebeck.className} fontWeight="bold">
-                            {isMale ? 'Putra' : 'Putri'} ke - {current.childOrder}
+                            {isMale ? 'Putra ketiga' : 'Putri pertama'} dari
                           </Typography>
                           <Typography className={fonts.bodebeck.className} fontWeight="bold">
                             {(['father', 'mother'] as const)
