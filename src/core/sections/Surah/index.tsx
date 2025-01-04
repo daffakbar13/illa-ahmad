@@ -47,7 +47,6 @@ const Surah: NextPage = () => {
           initial={{ scale: 0.5 }}
           whileInView={{ scale: 1 }}
           transition={{ duration: 1.2 }}
-          style={{ width: '70%' }}
         >
           <Box
             border="8px solid"
@@ -57,7 +56,7 @@ const Surah: NextPage = () => {
             borderRadius={2}
             overflow="hidden"
             boxShadow="0px 0px 30px 0px rgba(0,0,0,0.5)"
-            width="100%"
+            width={200}
             height={260}
             gap={2}
             my={4}
@@ -66,7 +65,7 @@ const Surah: NextPage = () => {
               backgroundImage: `url(${media.images.bb})`,
               backgroundRepeat: 'no-repeat',
               backgroundSize: '140%',
-              backgroundPosition: '-20px -150px',
+              backgroundPosition: '-20px -130px',
               pointerEvents: 'none',
             }}
           ></Box>
