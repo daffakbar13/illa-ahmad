@@ -50,7 +50,7 @@ const Cover: NextPage = () => {
         initial={{ opacity: 0, scale: 0 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1.2 }}
-        style={{ zIndex: 2, width: '80%', height: '80%' }}
+        style={{ zIndex: 2, width: '80%', height: '90%' }}
       >
         <Box
           position="relative"
@@ -78,6 +78,7 @@ const Cover: NextPage = () => {
             gap={1.5}
             borderRadius={999}
             zIndex={2}
+            pb={7}
             sx={{
               border: '6px solid',
               borderColor: 'primary.main',
@@ -94,25 +95,27 @@ const Cover: NextPage = () => {
                 backgroundPosition: 'center',
               }}
             />
-            <Stack>
-              <Typography color="primary" className={fonts.marcellus.className} fontSize={30}>
-                Laila & Ahmad
+            <Stack gap={2} justifyContent="center" flexGrow={1}>
+              <Stack>
+                <Typography color="primary" className={fonts.marcellus.className} fontSize={30}>
+                  Laila & Ahmad
+                </Typography>
+              </Stack>
+              <Typography className={fonts.montserrat.className} fontSize={13}>
+                Kepada Yth:
+                <br />
+                Bapak/Ibu/Saudara/i
               </Typography>
+              <Typography className={fonts.montserrat.className} fontSize={15} fontWeight="bold">
+                {to}
+              </Typography>
+              <Button onClick={onOpenInvitation}>
+                Open Invitation &nbsp;
+                {!isContentLoaded && isOpenedInvitation && (
+                  <CircularProgress size={12} color="warning" />
+                )}
+              </Button>
             </Stack>
-            <Typography className={fonts.montserrat.className} fontSize={13}>
-              Kepada Yth:
-              <br />
-              Bapak/Ibu/Saudara/i
-            </Typography>
-            <Typography className={fonts.montserrat.className} fontSize={15} fontWeight="bold">
-              {to}
-            </Typography>
-            <Button onClick={onOpenInvitation}>
-              Open Invitation &nbsp;
-              {!isContentLoaded && isOpenedInvitation && (
-                <CircularProgress size={12} color="warning" />
-              )}
-            </Button>
           </Stack>
         </Box>
       </motion.div>
