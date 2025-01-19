@@ -26,7 +26,7 @@ export async function GET(_: NextRequest, { params }: Params) {
 }
 
 export async function PUT(req: Request, { params }: Params) {
-  const guestId = new ObjectId(params.id)
+  const guestId = new ObjectId(params.name)
   const body = await req.json()
   const guests = await GuestsModel()
 
@@ -36,7 +36,7 @@ export async function PUT(req: Request, { params }: Params) {
 }
 
 export async function DELETE(_: Request, { params }: Params) {
-  const guestId = new ObjectId(params.id)
+  const guestId = new ObjectId(params.name)
   const guests = await GuestsModel()
 
   await guests.deleteOne({ _id: guestId })

@@ -36,7 +36,7 @@ const useRahasiaStore = create<UseRahasiaStore>((set) => ({
     return () => set({ deleteWishId })
   },
   copyTextShareInvitation(guest) {
-    const url = new URL(guest.name, window.location.origin)
+    const url = new URL(encodeURIComponent(guest.name), window.location.origin)
     navigator.clipboard?.writeText(`_Bismillahirrahmanirrahim_
 
 *Assalamau'alaikum Wr. Wb.*
