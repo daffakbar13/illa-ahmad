@@ -41,19 +41,16 @@ const useRahasiaStore = create<UseRahasiaStore>((set) => ({
 
 *Assalamau'alaikum Wr. Wb.*
     
-Dengan ungkapan syukur atas karunia Allah SWT, perkenankan kami mengundang Bapak/Ibu/Saudara/i untuk menghadiri acara pernikahan kami
+Tanpa mengurangi rasa hormat, perkenankan kami mengundang Bapak/Ibu/Saudara/i untuk menghadiri acara pernikahan kami.
     
-*Laila & Ahmad*
-    
-Yang insyaAllah akan dilaksanakan pada :
-    
-*Senin, 27 Januari 2025*
-    
-Berikut link undangan kami sampaikan
+*Berikut link undangan kami,*
+untuk info lengkat dari acara bisa kunjungi :
     
 ${url.toString()}
     
-Merupakan suatu kebahagiaan dan kehormatan bagi kami, apabila Bapak/Ibu/Saudara/i berkenan hadir dan memberikan do'a restu.
+Merupakan suatu kehormatan dan kebahagiaan bagi kami, apabila Bapak/Ibu/Saudara/i berkenan hadir dan memberikan do'a restu.
+
+*Mohon maaf perihal undangan hanya di bagikan melalui pesan ini*
     
 Atas kehadiran dan do'a restunya kami ucapkan terimakasih.
     
