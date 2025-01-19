@@ -43,8 +43,7 @@ const useRahasiaStore = create<UseRahasiaStore>((set) => ({
     
 Tanpa mengurangi rasa hormat, perkenankan kami mengundang Bapak/Ibu/Saudara/i untuk menghadiri acara pernikahan kami.
     
-*Berikut link undangan kami,*
-untuk info lengkat dari acara bisa kunjungi :
+*Berikut link undangan kami,* untuk info lengkap dari acara bisa kunjungi:
     
 ${url.toString()}
     
