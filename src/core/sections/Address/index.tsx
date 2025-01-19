@@ -125,7 +125,7 @@ const Address: NextPage = () => {
             transition={{ duration: 1.2 }}
           >
             <Typography className={fonts.montserrat.className} fontWeight="bold">
-              Aula Desa Mekarwangi
+              SDN 1 Mekarwangi
             </Typography>
           </motion.div>
           <motion.div
@@ -153,7 +153,7 @@ const Address: NextPage = () => {
         sx={{ backgroundColor: '#E6DED8' }}
       >
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d247.45525198317497!2d108.3430115042246!3d-7.093038806569349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f40cf98213fff%3A0x4ff04f4dd6c69ee9!2sKantor%20Desa%20Mekarwangi!5e0!3m2!1sen!2sid!4v1733631498653!5m2!1sen!2sid"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1038.4877253463255!2d108.34305675268465!3d-7.0926382591053265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f418f127f3845%3A0x49755d1d7f83d2ee!2sSDN%201%20Mekarwangi!5e0!3m2!1sen!2sid!4v1737260355398!5m2!1sen!2sid"
           width="100%"
           height="600"
           style={{ border: 0 }}
